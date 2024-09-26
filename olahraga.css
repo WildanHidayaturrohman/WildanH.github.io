@@ -1,0 +1,208 @@
+body {
+    background-image: url('kebutuhan/bg\ olahraga.jpeg');
+    background-size: cover; /* Mengatur background agar menyesuaikan layar */
+    background-position: center;
+    background-attachment: fixed; /* Menjaga background tetap saat di-scroll */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* Mengatur jarak antara gambar dan teks */
+}
+
+#myImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+#nama {
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.myCP {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.CP {
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+#out {
+    position: absolute; 
+    bottom: 20px;       
+    left: 20px;        
+    width: auto;       
+    padding: 10px 20px; 
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#out:hover {
+    background-color: rgb(120, 26, 26);
+    color: white;
+    transition: .2s ease-in-out;
+    transition-delay: .2s;
+}
+
+#contact {
+    animation: KEREN .7s infinite;
+}
+
+@keyframes KEREN {
+    0% {
+        font-size: 15px;
+    }
+    50% {
+        font-size: 20px;
+    }
+    100% {
+        font-size: 15px;
+    }
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: slategrey;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+ul li:hover {
+    background-color: silver;
+    color: black;
+    transition: .2s ease-in-out;
+    transition-delay: .2s;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Memusatkan grid secara horizontal */
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns */
+    gap: 10px; /* Space between images */
+    padding: 20px; /* Padding around the grid */
+}
+
+.grid img {
+    width: 100%; /* Full width of the grid cell */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+    object-fit: cover; /* Ensure images cover their cells */   
+    display: flex;
+    justify-content: center; /* Memusatkan grid secara horizontal */
+    padding: 20px;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
+
+.grid img:nth-child(6),
+.grid img:nth-child(7) {
+    margin-top: 60px; 
+}
+
+.v1 {
+    margin-top: -40px;
+}
+
+.v2 {
+    margin-top: -15px;
+}
+
+.J {
+    margin-top: 75px;
+}
+
+#R {
+    margin-left: 270px;
+}
+
+#mode {
+    position: absolute; 
+    bottom: 20px;       
+    right: 20px;   
+    width: auto;       
+    padding: 10px 20px; 
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#mode:hover {
+    background-color: rgb(98, 96, 96);
+    color: white;
+    transition: .2s ease-in-out;
+    transition-delay: .2s;
+}
